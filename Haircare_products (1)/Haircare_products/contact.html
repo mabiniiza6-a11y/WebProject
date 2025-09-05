@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Locks Luxe Hair Care</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: rgba(44, 44, 44, 0.95);
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .brand span {
+      color: #ff69b4;
+    }
+
+    .brand img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ff69b4;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #2c2c2c;
+      min-width: 160px;
+      z-index: 1;
+      border-radius: 5px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #444;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown > a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 10px 0;
+    }
+
+    /* Contact container */
+    .contact-container {
+      padding: 5% 10%;
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-title h1 {
+      font-size: 2.5rem;
+      color: #2c2c2c;
+    }
+
+    .contact-info {
+      margin-bottom: 30px;
+      text-align: center;
+      color: #555;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      min-height: 120px;
+    }
+
+    .contact-form button {
+      padding: 12px;
+      background-color: #bb6b6b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #a45555;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">
+      <img src="logo.jpg" alt="Logo">
+      Locks <span>Luxe</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Shop ▾</a>
+        <div class="dropdown-content">
+          <a href="shop.html">Shampoo & Conditioner</a>
+          <a href="heat.html">Heat Protectant Spray</a>
+          <a href="scalp.html">Scalp</a>
+          <a href="dryer.html">Hair Dryer</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+  </nav>
+
+  <div class="contact-container">
+    <div class="contact-title">
+      <h1>Contact Us</h1>
+    </div>
+
+    <div class="contact-info">
+      <p>We’d love to hear from you! Fill out the form below or reach us via the details provided.</p>
+      <p><strong>Email:</strong> support@locksluxe.com</p>
+      <p><strong>Phone:</strong> +63 912 345 6789</p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>

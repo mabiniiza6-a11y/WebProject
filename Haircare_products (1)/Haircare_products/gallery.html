@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Locks Luxe Hair Care - Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background-color: rgba(44, 44, 44, 0.95);
+      color: white;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .brand span {
+      color: #ff69b4;
+    }
+
+    .brand img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ff69b4;
+    }
+
+    /* Gallery styles */
+    .gallery-container {
+      padding: 40px 10%;
+      flex-grow: 1;
+    }
+
+    .gallery-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #2c2c2c;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 250px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #2c2c2c;
+      min-width: 160px;
+      z-index: 1;
+      border-radius: 5px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #444;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown > a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 10px 0;
+    }
+
+    footer {
+      background-color: #2c2c2c;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.95rem;
+    }
+
+    .footer-social a {
+      margin-left: 15px;
+      color: white;
+      font-size: 22px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-social a:hover {
+      color: #ff69b4;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <div class="brand">
+      <img src="logo.jpg" alt="Logo">
+      Locks <span>Luxe</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+       <div class="dropdown">
+        <a href="#">Shop ▾</a>
+        <div class="dropdown-content">
+          <a href="shop.html">Shampoo & Conditioner</a>
+          <a href="heat.html">Heat Protectant Spray</a>
+           <a href="scalp.html"> Scalp</a>
+           <a href="dryer.html"> Hair Dryer</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+  </nav>
+
+  <div class="gallery-container">
+    <h1 class="gallery-title">Our Hair Care Gallery</h1>
+    <div class="gallery-grid">
+      <img src="g1.png" alt="Gallery Image 1">
+      <img src="g2.png" alt="Gallery Image 2">
+      <img src="g3.jpg" alt="Gallery Image 3">
+      <img src="g4.jpg" alt="Gallery Image 4">
+      <img src="g5.jpg" alt="Gallery Image 5">
+      <img src="g6.jpg" alt="Gallery Image 6">
+      <img src="g7.jpg" alt="Gallery Image 7">
+      <img src="g8.png" alt="Gallery Image 8">
+      <img src="g9.jpg" alt="Gallery Image 9">
+      <img src="g10.png" alt="Gallery Image 10">
+      <img src="g11.jpg" alt="Gallery Image 6">
+      <img src="g12.png" alt="Gallery Image 7">
+      <img src="g13.jpg" alt="Gallery Image 8">
+      <img src="g14.jpg" alt="Gallery Image 9">
+      <img src="g15.png" alt="Gallery Image 10">
+    </div>
+  </div>
+
+  <footer>
+    <div>This website is for project purpose only!</div>
+    <div class="footer-social">
+      <a href="https://www.youtube.com/@IzaMabini-u7l" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/@IzaMabini-u7l" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@izayah444?_t=ZS-8yb7xPkC01q&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
